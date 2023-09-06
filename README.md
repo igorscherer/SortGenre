@@ -1,5 +1,3 @@
-#Sort Genre
-
 Este é um projeto simples que utiliza um arquivo Excel contendo nomes e faz chamadas a uma API para identificar o gênero associado a cada nome. O objetivo deste projeto é contar quantos nomes são identificados como masculinos e quantos são identificados como femininos usando a API Genderize.io.
 
 Como usar o projeto
