@@ -1,32 +1,36 @@
-Este é um projeto simples que utiliza um arquivo Excel contendo nomes e faz chamadas a uma API para identificar o gênero associado a cada nome. O objetivo deste projeto é contar quantos nomes são identificados como masculinos e quantos são identificados como femininos usando a API Genderize.io.
+#Sort Genre
 
-Como usar o projeto
-Siga os passos abaixo para utilizar este projeto:
+Este é um projeto Python simples que utiliza a biblioteca Pandas para ler um arquivo Excel contendo nomes e, em seguida, faz chamadas à API Genderize.io para determinar o gênero associado a cada nome. O objetivo é contar quantos nomes são classificados como masculinos e quantos são classificados como femininos na lista de nomes.
 
-Requisitos de software:
+##Pré-requisitos
+Antes de executar o projeto, certifique-se de que você tenha os seguintes pré-requisitos instalados:
 
-Python (3.6 ou superior)
-Bibliotecas Python: pandas, requests
-Clone o repositório:
-Clone este repositório em sua máquina local usando o seguinte comando git:
+Python 3.x
+Pandas
+Requests
 
-bash
-Copy code
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-Execute o código:
-Certifique-se de que o arquivo Excel Pasta.xlsx contendo os nomes esteja no mesmo diretório em que o código Python está localizado. Em seguida, execute o código Python usando o seguinte comando:
+##Como Usar
+Clone este repositório para o seu sistema local.
 
-bash
-Copy code
-python nome-do-arquivo.py
-Isso carregará o arquivo Excel, fará chamadas à API Genderize.io para identificar os gêneros e exibirá a contagem de nomes masculinos e femininos no console.
+Certifique-se de que o arquivo Excel que você deseja analisar esteja localizado no caminho especificado em df = pd.read_excel('C:/Users/Igor/Desktop/Projetos/ProjetosPython/Pasta.xlsx'). Você pode substituir este caminho pelo caminho do seu arquivo Excel.
 
-Resultados:
-Após a execução do código, você verá os resultados no console, indicando a contagem de nomes masculinos e femininos no arquivo.
+Execute o script Python gender_counter.py no seu ambiente Python:
 
-Observações
-Certifique-se de ter uma conexão com a internet ativa durante a execução do código, pois ele faz chamadas à API Genderize.io para identificar os gêneros dos nomes.
+python gender_counter.py
+O script lerá o arquivo Excel, enviará solicitações à API Genderize.io para determinar o gênero de cada nome e, em seguida, imprimirá os resultados na saída padrão.
 
-Este é um projeto simples destinado a fins educacionais e de demonstração.
+Após a execução bem-sucedida do script, você verá os seguintes resultados:
+Contagem de masculinos: X
+Contagem de femininos: Y
+Onde X é o número de nomes classificados como masculinos e Y é o número de nomes classificados como femininos.
 
-Lembre-se de respeitar os termos de uso da API Genderize.io ao fazer chamadas para identificação de gênero em nomes.
+##Notas
+Certifique-se de que sua máquina tenha acesso à Internet para que o script possa fazer chamadas à API Genderize.io.
+
+Este projeto é uma demonstração simples de como usar Pandas e a API Genderize.io para contar nomes masculinos e femininos em um arquivo Excel. Você pode personalizá-lo conforme suas necessidades específicas.
+
+Lembre-se de respeitar os termos de uso da API Genderize.io e considerar a limitação de uso gratuito. Você pode querer verificar os termos e limites no site oficial da API em http://www.genderize.io.
+
+Certifique-se de não compartilhar dados pessoais ou sensíveis ao usar este projeto.
+
+Divirta-se explorando a contagem de gêneros em sua lista de nomes!
