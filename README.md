@@ -10,14 +10,11 @@ Pandas
 Requests
 
 ## Como Usar
-Clone este repositório para o seu sistema local.
 
-Certifique-se de que o arquivo Excel que você deseja analisar esteja localizado no caminho especificado em df = pd.read_excel('C:/Users/Igor/Desktop/Projetos/ProjetosPython/Pasta.xlsx'). Você pode substituir este caminho pelo caminho do seu arquivo Excel.
-
-Execute o script Python gender_counter.py no seu ambiente Python:
-
-python gender_counter.py
-O script lerá o arquivo Excel, enviará solicitações à API Genderize.io para determinar o gênero de cada nome e, em seguida, imprimirá os resultados na saída padrão.
+1. Clone este repositório para o seu sistema local.
+2. Certifique-se de que o arquivo Excel que você deseja analisar esteja localizado no caminho especificado em df = pd.read_excel('C:/Users/Igor/Desktop/Projetos/ProjetosPython/Pasta.xlsx'). Você pode substituir este caminho pelo caminho do seu arquivo Excel.
+3. Execute o script Python gender_counter.py no seu ambiente Python: python gender_counter.py
+4. O script lerá o arquivo Excel, enviará solicitações à API Genderize.io para determinar o gênero de cada nome e, em seguida, imprimirá os resultados na saída padrão.
 
 Após a execução bem-sucedida do script, você verá os seguintes resultados:
 Contagem de masculinos: X
